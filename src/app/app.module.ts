@@ -9,6 +9,8 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { HighlightDirective } from './highlight.directive';
 import { UserProfilePipe } from './user-profile.pipe';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { UserProfilePipe } from './user-profile.pipe';
     UserComponent,
     UserListComponent,
     HighlightDirective,
-    UserProfilePipe
+    UserProfilePipe,
+    ContactUsComponent,
+    //CompanyNameComponent
   ],
   imports: [
     BrowserModule
