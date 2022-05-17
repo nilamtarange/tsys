@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { HighlightDirective } from './highlight.directive';
+import { UserProfilePipe } from './user-profile.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { UserListComponent } from './user-list/user-list.component';
     FooterComponent,
     MainContainerComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    HighlightDirective,
+    UserProfilePipe
   ],
   imports: [
     BrowserModule
