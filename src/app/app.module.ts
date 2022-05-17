@@ -10,6 +10,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { HighlightDirective } from './highlight.directive';
 import { UserProfilePipe } from './user-profile.pipe';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PriyaComponent } from './priya/priya.component';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HighlightDirective,
     UserProfilePipe,
     ContactUsComponent,
+    PriyaComponent,
     //CompanyNameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
