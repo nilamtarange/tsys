@@ -12,8 +12,26 @@ import { UserProfilePipe } from './user-profile.pipe';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PriyaComponent } from './priya/priya.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
+const routersConfig: Routes=[
+{
+  path:'home',
+  component:HomeComponent
+},
+{
+path:'contact',
+component: ContactUsComponent
 
+},
+{
+path:'list',
+component:UserListComponent
+
+}
+
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +44,13 @@ import { PriyaComponent } from './priya/priya.component';
     UserProfilePipe,
     ContactUsComponent,
     PriyaComponent,
+    HomeComponent,
     //CompanyNameComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routersConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
